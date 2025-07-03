@@ -6,105 +6,226 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
   
-  <title>Recipe page</title>
-
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Italian Recipes</title>
 </head>
 <body>
-<div class="container">
-  <div class="img-re">
-  <img src="assets/images/image-omelette.jpeg" alt="picture of an egg omlette"> <br>
-  </div>
-  <div class="recipe-informations">
-    <h1>Simple Omlette Recipe</h1> <br>
-    <p class="description">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-      to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p> <br>
-  </div>
-  <div class="prep-time">
-    <h3>Preparation time</h3>
-    <ul>
-      <li><span>Time:</span>  Approximately 10 minutes</li>
-      <li><span>Preparation:</span>  5 minutes</li>
-      <li><span>Time:</span>   Approximately 10 minutes</li>
-    </ul>
-  </div>
-  <div class="recipe-step">
-    <h2>Ingredients</h2>
-    <ul class="ingredients-list">
-      <li><span>2-3 large eggs</span></li>
-      <li><span>Salt, to taste</span></li>
-      <li><span>Pepper, to taste</span></li>
-      <li><span>1 tablespoon of butter or oil</span></li>
-      <li><span>Optional fillings: cheese, bacon,herbs, meats</span></li>
-    </ul>
-  </div>
-  <hr>
-  <div class="recipe-step">
-    <h2>Instructions</h2>
-    <div class="Instructions">
-    <div class="item">
-      <div class="num">1.</div>
-      <p><span>Beat the eggs:</span>In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-        You can add a tablespoon of water or milk for a fluffier texture.</p>
-    </div>
-    <div class="item">
-      <div class="num">2.</div>
-      <p><span>Heat the pan:</span>Place a non-stick frying pan over medium heat 
-        and add butter or oil.</p>
-    </div>
-    <div class="item">
-      <div class="num">3.</div>
-      <p><span>Cook the omelette:</span>Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-        the eggs evenly coat the surface.</p>
-    </div>
-    <div class="item">
-      <div class="num">4.</div>
-      <p><span>Add fillings (optional):</span>When the eggs begin to set at the edges but are still slightly runny in the 
-        middle, sprinkle your chosen fillings over one half of the omelette.</p>
-    </div>
-    <div class="item">
-      <div class="num">5.</div>
-      <p><span>Fold and serve:</span>As the omelette continues to cook, carefully lift one edge and fold it over the 
-        fillings. Let it cook for another minute, then slide it onto a plate.</p>
-    </div>
-  </div>
-  </div>
-  <hr>
+  <header class="site-header">
+    <div class="logo">Cucina Italiana</div>
+    <nav>
+      <ul>
+        <li><a href="#top" class="active">Home</a></li>
+        <li><a href="#more-recipes">Recipes</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+  </header>
 
-  <div class="nutrition-step">
-    <h2>Nutrition</h2>
-    <p class="values">The table below shows nutritional values that this omlette has:</p>
-    <div class="nutrition-table">
-    <div class="item">
-      <p>Calories</p>
-      <p class="amount">277Kcal</p>
-    </div>
-    <div class="item">
-      <p>Protein</p>
-      <p class="amount">20g</p>
-    </div>
-    <div class="item">
-      <p>Carbs</p>
-      <p class="amount">0g</p>
-    </div>
-    <div class="item">
-      <p>Fat</p>
-      <p class="amount">22g</p>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Authentic Italian Cuisine</h1>
+      <p>Discover the flavors of Italy with our traditional recipes</p>
     </div>
   </div>
+
+  <div class="about-section" id="about">
+    <div class="container about-container">
+      <h2>About Cucina Italiana</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Italian male chef cooking" class="about-img">
+        </div>
+        <div class="about-text">
+          <p>Welcome to Cucina Italiana, your gateway to authentic Italian cuisine. Founded in 2023, we are passionate about bringing the rich culinary traditions of Italy to your home kitchen.</p>
+          <p>Our recipes are carefully curated from traditional Italian households, ensuring you experience the true flavors of Italy with every dish you prepare.</p>
+          <p>From the sun-drenched fields of Tuscany to the coastal kitchens of Sicily, our collection represents the diverse regional cuisines that make Italian food so beloved worldwide.</p>
+        </div>
+      </div>
+    </div>
   </div>
-    
-    
+
+  <div class="container recipe-card">
+    <div class="img-re">
+      <img src="images/image-omelette.jpeg" alt="picture of an Italian frittata" class="recipe-image"> 
+    </div>
+    <div class="recipe-informations">
+      <h1>Italian Frittata Recipe</h1>
+      <p class="description">A delicious Italian-style omelette that's perfect for any meal. This classic frittata combines beaten eggs with Italian herbs, cheese, and vegetables for an authentic taste of Italy.</p>
+    </div>
+    <div class="prep-time">
+      <h3>Preparation time</h3>
+      <ul>
+        <li><span>Total Time:</span> Approximately 25 minutes</li>
+        <li><span>Preparation:</span> 10 minutes</li>
+        <li><span>Cooking:</span> 15 minutes</li>
+      </ul>
+    </div>
+    <div class="recipe-step">
+      <h2>Ingredients</h2>
+      <ul class="ingredients-list">
+        <li><span>6 large eggs</span></li>
+        <li><span>1/4 cup grated Parmigiano-Reggiano</span></li>
+        <li><span>2 tablespoons fresh basil, chopped</span></li>
+        <li><span>1 tablespoon olive oil</span></li>
+        <li><span>1/2 cup cherry tomatoes, halved</span></li>
+        <li><span>1/4 cup diced bell peppers</span></li>
+        <li><span>Salt and black pepper, to taste</span></li>
+      </ul>
+    </div>
+    <hr>
+    <div class="recipe-step">
+      <h2>Instructions</h2>
+      <div class="Instructions">
+        <div class="item">
+          <div class="num">1.</div>
+          <p><span>Prepare the eggs:</span> In a bowl, beat the eggs with grated Parmigiano-Reggiano, chopped basil, salt, and pepper until well combined.</p>
+        </div>
+        <div class="item">
+          <div class="num">2.</div>
+          <p><span>Heat the pan:</span> Place a non-stick, oven-safe skillet over medium heat and add olive oil.</p>
+        </div>
+        <div class="item">
+          <div class="num">3.</div>
+          <p><span>Add vegetables:</span> Sauté the cherry tomatoes and bell peppers for 2-3 minutes until slightly softened.</p>
+        </div>
+        <div class="item">
+          <div class="num">4.</div>
+          <p><span>Cook the frittata:</span> Pour the egg mixture over the vegetables, tilting the pan to ensure even distribution. Cook for 3-4 minutes until the edges begin to set.</p>
+        </div>
+        <div class="item">
+          <div class="num">5.</div>
+          <p><span>Finish in oven:</span> Transfer the skillet to a preheated oven (350°F/180°C) and bake for 8-10 minutes until the frittata is fully set and lightly golden on top.</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="nutrition-step">
+      <h2>Nutrition</h2>
+      <p class="values">The table below shows nutritional values per serving:</p>
+      <div class="nutrition-table">
+        <div class="item">
+          <p>Calories</p>
+          <p class="amount">220Kcal</p>
+        </div>
+        <div class="item">
+          <p>Protein</p>
+          <p class="amount">15g</p>
+        </div>
+        <div class="item">
+          <p>Carbs</p>
+          <p class="amount">3g</p>
+        </div>
+        <div class="item">
+          <p>Fat</p>
+          <p class="amount">17g</p>
+        </div>
+      </div>
+    </div>
+  </div>
   
-</div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Yasmina Jabrouni</a>.
+  <div id="more-recipes" class="more-recipes">
+    <h2>More Italian Recipes</h2>
+    <div class="recipe-grid">
+      <div class="recipe-preview">
+        <div class="recipe-preview-img"></div>
+        <h3>Classic Margherita Pizza</h3>
+        <p>Traditional Neapolitan pizza with tomatoes, mozzarella, and basil</p>
+        <a href="margherita-pizza.html" class="btn">View Recipe</a>
+      </div>
+      <div class="recipe-preview">
+        <div class="recipe-preview-img"></div>
+        <h3>Homemade Pasta Carbonara</h3>
+        <p>Creamy pasta with pancetta, eggs, and Pecorino Romano</p>
+        <a href="pasta-carbonara.html" class="btn">View Recipe</a>
+      </div>
+      <div class="recipe-preview">
+        <div class="recipe-preview-img"></div>
+        <h3>Tiramisu</h3>
+        <p>Classic Italian dessert with coffee-soaked ladyfingers and mascarpone</p>
+        <a href="tiramisu.html" class="btn">View Recipe</a>
+      </div>
+    </div>
   </div>
+
+  <div class="contact-section" id="contact">
+    <div class="container contact-container">
+      <h2>Contact Us</h2>
+      <p class="contact-intro">Have questions about our recipes or want to share your Italian cooking experiences? We'd love to hear from you!</p>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>info@cucinaitaliana.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>+1 (555) 123-4567</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>123 Pasta Street, Foodville, IT 98765</p>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Cucina Italiana</h3>
+        <p>Bringing authentic Italian recipes to your kitchen since 2023.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#more-recipes">Recipes</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Subscribe</h3>
+        <p>Get the latest recipes delivered to your inbox.</p>
+        <form>
+          <input type="email" placeholder="Your email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Yasmina Jabrouni</a>.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
